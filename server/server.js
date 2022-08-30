@@ -85,11 +85,6 @@ The Tailor Thrift Team`;
 
 
 
-if (process.env.NODEENV !== 'production') {
-  require('dotenv').config({path: __dirname+'/.env'});
-}
-
-
 db.once("open", () => {
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);
@@ -97,11 +92,3 @@ db.once("open", () => {
   });
 });
 
-
-// static files (build of your frontend)
-if (process.env.NODEENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client', 'build')));
-  app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client', 'build', 'index.html'));
-  })
-}

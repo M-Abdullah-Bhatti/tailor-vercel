@@ -51,7 +51,7 @@ function App() {
     <ApolloProvider client={client}>
       <div className="App">
         <StoreProvider>
-          <BrowserRouter basename='/'>
+          <BrowserRouter>
             <Header />
             <nav className='navbar navbar-expand-sm header navbar-light bg-light'>
               <Link  to="/" className="appLink mx-auto navbar-brand resp1" href="#">
