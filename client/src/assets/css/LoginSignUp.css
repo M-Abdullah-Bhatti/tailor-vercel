@@ -1,0 +1,191 @@
+.loginCard{
+    width: 100vw;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    min-height: 35rem;
+
+}
+
+.signinCard{
+    width: 100vw;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.form{
+    box-shadow: -3px -3px 9px #aaa9a9a2,
+    3px 3px 7px rgba(147, 149, 151, 0.671);
+    background-color: aliceblue;
+}
+
+
+
+.full{
+    background: url(https://gjkimball.files.wordpress.com/2020/09/331119-men-suits.jpg?w=720&h=426&crop=1);
+
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+
+
+
+.measureCard{
+    width: 100vw;
+    max-width: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    text-align-last: right;
+    
+}
+
+.loginTitle{
+    font-size: 25px;
+    text-align: center;
+    font-weight:500;
+    color:rgb(6, 6, 117)
+
+
+}
+
+.matlab{
+    margin-top: 4rem;
+}
+
+.measureTitleLogin{
+    font-size: 22px;
+    text-align: center;
+    font-weight:600;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    color: rgb(6, 6, 117);
+}
+
+.measureTitleText{
+    font-size: 16px;
+    text-align: center;
+    font-weight:400;
+    margin-top: 10px;
+
+    color: rgb(6, 6, 117);
+    margin-right:1.1rem;
+}
+
+.fields{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.measureFields{
+    text-align: center;
+    margin-top: 10px;
+
+
+}
+
+.topfield{
+    margin-bottom: 2rem;
+}
+
+.loginField{
+    padding: 10px 0 10px 20px;
+    font-size: 14px;
+    width:250px;
+    font-weight: lighter;
+    border: 1px solid  rgb(167, 167, 167);
+    border-radius: 2px;
+}
+
+.measureField{
+    padding: 10px 0 10px 20px;
+    font-size: 14px;
+    width:100px;
+    font-weight: lighter;
+    border: 1px solid  rgb(167, 167, 167);
+    border-radius: 2px;
+    text-align-last: auto;
+}
+
+
+.loginButton{
+    text-align: center;
+    margin-top:25px;
+    margin-bottom: 2rem;
+    
+
+}
+
+.loginBtn{
+    border: none;
+    align-items: center;
+    width:250px;
+    height: 35px;
+    background-color: #212529;
+    background-color: rgb(6, 6, 117);
+    border-radius: 2px;
+    font-weight: lighter;
+    color:white;
+}
+
+.loginBtn:hover {
+    background-color: black;
+}
+
+.goToSignUp{
+    max-width: 300px;
+    display: block;
+    margin-right:6rem;
+
+    text-decoration: none;
+    color: rgb(6, 6, 117);
+    font-size: 12px;
+}
+
+.goToLogin{
+    max-width: 250px;
+    display: block;
+    margin-right:7rem;
+    text-decoration: none;
+    color: rgb(6, 6, 117);
+    font-size: 12px;
+    text-align: end;
+
+}
+
+.loginRedirect{
+    max-width: 300px;
+    display: block;
+    margin-right:6rem;
+    text-decoration: none;
+    color: rgb(6, 6, 117);
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.signUpRedirect{
+    max-width: 250px;
+    display: block;
+    margin-right:6rem;
+    text-decoration: none;
+    color: rgb(6, 6, 117);
+
+    font-size: 12px;
+    text-align: right;
+}
+
+.redirectSection{
+    width:250px;
+    text-align: right;
+    display: block;
+    margin-right:6rem;
+    
+}

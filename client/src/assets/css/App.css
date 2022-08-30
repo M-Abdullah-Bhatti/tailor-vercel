@@ -1,0 +1,78 @@
+:root {
+    --darkblue: #003663;
+    --dark-grey: #212529;
+}
+
+.logo {
+    height: 35px;
+}
+
+.header {
+    background-color: white;
+    color: var(--darkblue);
+    text-decoration: none;
+    padding: 0px !important;
+}
+
+.headerIcons {
+    position: absolute;
+    right: 1%;
+}
+
+.headerTextLinks {
+    position: absolute;
+}
+
+.headerTextItem {
+    font-size: 14px;
+}
+
+.LinkText {
+    text-decoration: none;
+}
+
+.appLink {
+    color: var(--dark-grey)
+}
+
+.loggedOutIcon {
+    height: 35px;
+}
+
+.cartHeaderIcon {
+    display: flex;
+    justify-self: flex-start;
+}
+
+@media screen and (max-width: 575px) {
+    .loggedOutIcon {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .headerTextItem {
+        font-size: 10px;
+    }
+    .logo {
+        height: 30px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .resp1 {
+        margin: 0 !important;
+        margin-left: 34%;
+    }
+    .resp1 h3 {
+        font-size: 5vmin;
+    }
+    .LinkText {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .navbar-toggler {
+        /* margin-right: 6vmin !important; */
+    }
+}

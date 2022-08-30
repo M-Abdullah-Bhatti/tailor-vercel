@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.310430b1.css",
+    "main.js": "/static/js/main.620d347a.js",
+    "static/media/JeffHead.png": "/static/media/JeffHead.f8f7a61e0a982fe7c774.png",
+    "static/media/measurePhoto.png": "/static/media/measurePhoto.647d1ff2c169ee3b13c9.png",
+    "static/media/Feature4.png": "/static/media/Feature4.599b9ec8163bb25bdfb0.png",
+    "static/media/Feature1.png": "/static/media/Feature1.6de40ea701d4f544249a.png",
+    "static/media/MattHead.png": "/static/media/MattHead.e054475d22cf0a7c135a.png",
+    "static/media/StevenHead.png": "/static/media/StevenHead.198d9265750bb08c8850.png",
+    "static/media/stor2.jpg": "/static/media/stor2.1c810ede815a13a52237.jpg",
+    "static/media/OscarHead.png": "/static/media/OscarHead.2939c68c590e588b20d8.png",
+    "static/media/Feature2.jpg": "/static/media/Feature2.9baaba35c2079fb0319c.jpg",
+    "static/media/stor3.jpg": "/static/media/stor3.7bd7a813df94d505f5ea.jpg",
+    "static/media/MarcHead.png": "/static/media/MarcHead.ae47001d846ca45c37dc.png",
+    "static/media/banner-small.jpg": "/static/media/banner-small.1276d09c99cd01592010.jpg",
+    "static/media/spinner.gif": "/static/media/spinner.689d9a07cc3c3eddc116.gif",
+    "static/media/CartEmpty.png": "/static/media/CartEmpty.cefae1348581c9265f60.png",
+    "static/media/home.jpg": "/static/media/home.7e0f9fc6a78a2c86fe31.jpg",
+    "static/media/stor11.jpg": "/static/media/stor11.589fb434c9671bde8000.jpg",
+    "index.html": "/index.html",
+    "main.310430b1.css.map": "/static/css/main.310430b1.css.map",
+    "main.620d347a.js.map": "/static/js/main.620d347a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.310430b1.css",
+    "static/js/main.620d347a.js"
+  ]
+}

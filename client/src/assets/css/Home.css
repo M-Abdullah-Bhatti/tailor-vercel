@@ -1,0 +1,282 @@
+.logoContainer {
+    text-align-last: center;
+}
+
+.banner {
+    width: 140vh;
+    height: 70vh;
+    display: block;
+    margin: auto;
+    z-index: 800;
+    /* margin: 10px;
+  width: 100vw;
+  max-width: 1100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 800;
+  margin-top: 0px; */
+}
+
+.statementSection {
+    text-align: center;
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    background-color: #f2f2f2;
+    padding: 50px 100px 50px 100px;
+    color: rgb(95, 95, 95);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+}
+
+.statementText {
+    font-size: 16px;
+}
+
+.statementTitle {
+    font-size: 35px;
+    color: #3C6E71;
+}
+
+.bannerText {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: lighter;
+    line-height: 80px;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    margin-top: -50px;
+    transform: translate(-50%, -50%);
+    max-width: 310px;
+    margin-left: -270px;
+    text-align: left;
+    z-index: 900;
+}
+
+.featureSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 80px !important;
+}
+
+.featureTitle {
+    font-size: 25px;
+    margin: 0px;
+}
+
+.feature {
+    height: 300px;
+    width: 210px;
+}
+
+
+/* .shopSection {
+    margin-bottom: 100px;
+    width: 800px;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    display: block;
+} */
+
+.CategorySection {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-width: 1000px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 80px !important;
+    background-color: #f2f2f2;
+}
+
+.categoryBtn {
+    background-color: #3C6E71;
+    border-left: 2px dashed white;
+    border-right: 2px dashed white;
+    cursor: pointer;
+    color: white;
+}
+
+.categoryBtn:hover {
+    color: #3C6E71;
+    background-color: #D9D9D9;
+}
+
+.CategoryLink {
+    /* color: white; */
+    background-color: transparent;
+    border: none;
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+    /* font-weight: ; */
+    font-size: 20px;
+    padding: 60px 0 60px 0;
+    /* background-color: #f2f2f2; */
+}
+
+.MeasurementSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 80px !important;
+    margin-bottom: 50px;
+}
+
+.measure {
+    /* background-color: #154c79 ; */
+    height: 500px;
+}
+
+.measure1 {
+    padding: 0px !important;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.measure2 {
+    padding: 0px !important;
+    min-width: 400px;
+}
+
+.measureTitle {
+    position: absolute;
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 90px !important;
+    width: 350px !important;
+    margin-right: 520px;
+    line-height: 110px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+}
+
+.measurePhoto {
+    max-width: 500px;
+    filter: grayscale(90);
+}
+
+@media screen and (max-width: 1000px) {
+    .statementSection {
+        max-width: 400px;
+    }
+    .measurePhoto {
+        max-width: 400px;
+    }
+    .bannerText {
+        font-size: 30px;
+        max-width: 400px;
+        position: absolute;
+        margin-left: auto;
+        line-height: 50px;
+        text-align: center;
+        margin-top: -50%;
+    }
+    .feature {
+        max-height: 150px !important;
+        max-width: 200px !important;
+        margin: 0px;
+        padding: 0px;
+    }
+    .featureCard {
+        padding: 0px !important;
+        margin: 0px !important;
+        /* height: 200px; */
+    }
+    .CategorySection {
+        max-width: 400px;
+    }
+    .shopSection {
+        /* width: 800px; */
+        display: none;
+    }
+    .CategorySection {
+        max-width: 400px !important;
+    }
+    .shopSection {
+        /* width: 400px; */
+        display: none;
+
+    }
+    .CategoryLink {
+        background-color: white;
+        border: none;
+        /* margin-left: 80PX !important;
+        margin-right: 80px !important; */
+        /* font-weight: ; */
+        font-size: 20px;
+        width: 400px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    @media screen and (max-width: 480px) {
+        .bannerText {
+            font-size: 24px;
+            transform: translate(-100%, -50%);
+            margin-top: -60%;
+        }
+        .row>* {
+            margin-left: 20px;
+        }
+        .measureTitle {
+            font-size: 48px !important;
+            top: 40%;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .logoContainer {
+        position: relative;
+    }
+    .bannerText {
+        width: 83% !important;
+        left: 90vmin !important;
+        font-size: 11vmin !important;
+        margin: auto !important;
+        text-shadow: 4px 2px 5px 0 0 red;
+        font-weight: 900;
+        box-shadow: -1px 2px 8px 3px rgb(255 255 255 / 75%);
+        text-shadow: 3px 8px 14px #000000;
+        line-height: 16vmin;
+    }
+    .statementSection {
+        width: 100% !important;
+        padding: 10vmin 2vmin;
+        margin: 15vmin 0;
+    }
+    .statementTitle {
+        font-size: 9vmin;
+        line-height: 11vmin;
+        font-family: fangsong;
+    }
+    .MeasurementSection {
+        margin-bottom: 100px !important;
+    }
+    .row>* {
+        margin-left: 0px;
+    }
+    .measureTitle {
+        font-size: 17vmin !important;
+        font-weight: 900;
+        line-height: 19vmin;
+        text-shadow: 0px 3px 14px #7c0e0e;
+    }
+}

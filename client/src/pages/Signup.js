@@ -1,0 +1,190 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useMutation } from "@apollo/client";
+import Auth from "../utils/auth";
+import { ADD_USER } from "../utils/mutations";
+import "../assets/css/LoginSignUp.css";
+
+function Signup(props) {
+  const [formState, setFormState] = useState({ email: "", password: "" });
+  const [addUser] = useMutation(ADD_USER);
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    const mutationResponse = await addUser({
+      variables: {
+        email: formState.email,
+        password: formState.password,
+        firstName: formState.firstName,
+        lastName: formState.lastName,
+        chest: formState.chest,
+        arms: formState.arms,
+        waist: formState.waist,
+        inseam: formState.inseam,
+      },
+    });
+    const token = mutationResponse.data.addUser.token;
+    Auth.login(token);
+
+    const submitEmail = await fetch("http://localhost:3001/send", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ formState }),
+    })
+      .then((res) => res.json())
+      .then(async (res) => {
+        const resData = await res;
+        console.log(resData);
+        if (resData.status === "success") {
+          alert("Message Sent");
+        } else if (resData.status === "fail") {
+          alert("Message failed to send");
+        }
+      });
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
+  };
+
+  return (
+    <div className="container my-1 full">
+      <div className="signinCard">
+
+    
+
+      <form onSubmit={handleFormSubmit} className="form">
+      <h2 className="loginTitle">New Users</h2>
+        <div className="flex-row space-between my-2 fields">
+        <div className="matlab">
+          <label htmlFor="firstName"></label>
+          <input
+            className="loginField"
+            placeholder="First Name"
+            name="firstName"
+            type="firstName"
+            id="firstName"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row space-between my-2 fields">
+          <label htmlFor="lastName"></label>
+          <input
+            className="loginField"
+            placeholder="Last Name"
+            name="lastName"
+            type="lastName"
+            id="lastName"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row space-between my-2 fields">
+          <label htmlFor="email"></label>
+          <input
+            className="loginField"
+            placeholder="email@domain.com"
+            name="email"
+            type="email"
+            id="email"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row space-between my-2 fields">
+          <label htmlFor="pwd"></label>
+          <input
+            className="loginField"
+            placeholder="Password"
+            name="password"
+            type="password"
+            id="pwd"
+            onChange={handleChange}
+          />
+
+                    <div >
+            <p className='measureTitleLogin'>New User Measurements</p>
+
+          </div>
+        </div>
+
+        <div className="measureCard">
+          <div className="measureFields">
+            <label className="measureTitleText" htmlFor="chest">
+              Chest{" "}
+            </label>
+            <input
+              className="measureField"
+              placeholder="  e.g.42in"
+              name="chest"
+              type="chest"
+              id="chest"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="measureFields">
+            <label className="measureTitleText" htmlFor="pwd">
+              Arms
+            </label>
+            <input
+              className="measureField"
+              placeholder="e.g. 42in"
+              name="arms"
+              type="arms"
+              id="arms"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="measureFields">
+            <label className="measureTitleText" htmlFor="waist">
+              Waist
+            </label>
+            <input
+              className="measureField"
+              placeholder="e.g. 32in"
+              name="waist"
+              type="waist"
+              id="waist"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="measureFields">
+            <label className="measureTitleText" htmlFor="legs">
+              Inseam
+            </label>
+            <input
+              className="measureField"
+              placeholder="e.g. 32in"
+              name="inseam"
+              type="inseam"
+              id="inseam"
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+
+        <div className="flex-end loginButton">
+          <button type="submit" className="loginBtn">
+            Sign Up
+          </button>
+
+        </div>
+        </div>
+        <div>
+        <div className="signUpRedirect">Already a member?</div>
+        <Link to="/login" className="goToLogin">
+          ← Go to Login
+        </Link>
+      </div>
+      </form>
+      </div>
+    
+    </div>
+  );
+}
+
+export default Signup;

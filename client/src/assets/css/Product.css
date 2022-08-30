@@ -1,0 +1,12 @@
+.productBanner {
+  width: 90vh;
+  height: 70vh;
+  display: block;
+
+  margin: auto;
+  z-index: 800;
+}
+
+.productsPage {
+  padding-bottom: 50px;
+}
